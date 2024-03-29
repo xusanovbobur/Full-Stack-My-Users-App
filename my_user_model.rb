@@ -59,7 +59,6 @@ class User
       return users
     end
   end
-
   def update_user_attribute(user_id, attribute, value)
     begin
       db = SQLite3::Database.open @db_name
@@ -85,7 +84,6 @@ class User
       puts "User deleted"
     end
   end
-
   def find_user_by_credentials(email, password)
     begin
       db = SQLite3::Database.open @db_name
@@ -98,5 +96,5 @@ class User
       puts "User found by credentials"
       return user_id
     end
-  end
-end
+  end 
+  51614299936
